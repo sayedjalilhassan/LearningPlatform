@@ -1,0 +1,13 @@
+﻿[C:\Windows\Microsoft.NET\Framework\v4.0.30319\WPF\PresentationNative_v0400.dll]
+SIZE=0
+SAMPS=1
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x60f10000
+LINECOUNT=1
+5384,1508,1,1,[0 0] 1,0xc382
+[SUB_END]
+[END]
+

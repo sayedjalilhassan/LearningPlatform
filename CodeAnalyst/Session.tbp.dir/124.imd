@@ -1,0 +1,17 @@
+﻿[C:\Windows\System32\drivers\partmgr.sys]
+SIZE=0
+SAMPS=5
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0xfffff88000dbf000
+LINECOUNT=5
+4,4772,1,1,[2 0] 1,0x42d5
+2348,1536,1,1,[2 0] 1,0x4965
+0,0,1,1,[1 0] 1,0x49fc
+2348,1536,1,1,[1 0] 1,0x61b3
+3868,3872,1,1,[0 0] 1,0x61d1
+[SUB_END]
+[END]
+

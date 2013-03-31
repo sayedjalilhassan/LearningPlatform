@@ -1,0 +1,14 @@
+﻿[C:\Windows\assembly\NativeImages_v4.0.30319_32\System.ComponentMod#\d53442e6482ee6cdfc35d6dea7eeca36\System.ComponentModel.Composition.ni.dll]
+SIZE=0
+SAMPS=2
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x55d60000
+LINECOUNT=2
+5384,1508,1,1,[0 0] 1,0x1f0c8
+5384,1508,1,1,[3 0] 1,0x63e7e
+[SUB_END]
+[END]
+

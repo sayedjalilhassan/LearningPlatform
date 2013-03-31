@@ -1,0 +1,15 @@
+﻿[C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\stanpackage.dll]
+SIZE=0
+SAMPS=3
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x54710000
+LINECOUNT=3
+5384,1508,1,1,[0 0] 1,0x553cf
+5384,1508,1,1,[0 0] 1,0x55c1f
+5384,1508,1,1,[0 0] 1,0x55f4d
+[SUB_END]
+[END]
+

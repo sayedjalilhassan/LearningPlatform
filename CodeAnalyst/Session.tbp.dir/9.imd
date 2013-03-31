@@ -1,0 +1,14 @@
+﻿[C:\Program Files (x86)\Internet Download Manager\IDMNetMon64.DLL]
+SIZE=0
+SAMPS=2
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x7fef56b0000
+LINECOUNT=2
+2796,2928,1,1,[1 0] 1,0x26cd
+2796,2928,1,1,[1 0] 1,0x28f3
+[SUB_END]
+[END]
+

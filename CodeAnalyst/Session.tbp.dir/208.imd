@@ -1,0 +1,12 @@
+﻿[unknown module pid (1732)]
+SIZE=0
+SAMPS=1
+ModuleType=5
+NUMSUBSECTIONS=1
+
+[SUB]
+LINECOUNT=1
+1732,9196,1,1,[0 0] 1,0x77ab1c75
+[SUB_END]
+[END]
+

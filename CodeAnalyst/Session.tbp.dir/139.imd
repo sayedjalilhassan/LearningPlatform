@@ -1,0 +1,17 @@
+﻿[C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Design\26eef74094104233ae17c0bb5bfc36f1\System.Design.ni.dll]
+SIZE=0
+SAMPS=5
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x59800000
+LINECOUNT=5
+5384,1508,1,1,[0 0] 1,0xfc5b0
+5384,1508,1,1,[1 0] 1,0x107cc1
+5384,1508,1,1,[0 0] 1,0x666f8d
+5384,1508,1,1,[1 0] 1,0x75f616
+5384,1508,1,1,[1 0] 1,0x75f681
+[SUB_END]
+[END]
+

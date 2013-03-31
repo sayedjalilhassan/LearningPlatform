@@ -1,0 +1,17 @@
+﻿[C:\Users\Sayed_Jalil_Hassan\AppData\Local\Google\Chrome\Application\23.0.1271.64\PepperFlash\pepflashplayer.dll]
+SIZE=0
+SAMPS=6
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x61120000
+LINECOUNT=5
+860,2568,1,1,[0 0] 1,0xe0d9b
+860,2568,2,1,[2 0] 2,0xe3d31
+860,4076,1,1,[1 0] 1,0xf4d5f
+860,2568,1,1,[1 0] 1,0x259ef0
+860,2568,1,1,[2 0] 1,0x449e74
+[SUB_END]
+[END]
+

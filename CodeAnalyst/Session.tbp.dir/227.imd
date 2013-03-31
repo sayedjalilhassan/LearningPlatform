@@ -1,0 +1,12 @@
+﻿[unknown module pid (700)]
+SIZE=0
+SAMPS=1
+ModuleType=5
+NUMSUBSECTIONS=1
+
+[SUB]
+LINECOUNT=1
+700,8816,1,1,[3 0] 1,0x77a1fe1d
+[SUB_END]
+[END]
+

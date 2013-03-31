@@ -1,0 +1,15 @@
+﻿[unknown module pid (748)]
+SIZE=0
+SAMPS=4
+ModuleType=5
+NUMSUBSECTIONS=1
+
+[SUB]
+LINECOUNT=4
+748,440,1,1,[0 0] 1,0x77a1b012
+748,436,1,1,[2 0] 1,0x77a27669
+748,1168,1,1,[0 0] 1,0x77a53200
+748,1168,1,1,[1 0] 1,0x77a54fad
+[SUB_END]
+[END]
+

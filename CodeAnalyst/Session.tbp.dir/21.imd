@@ -1,0 +1,16 @@
+﻿[C:\Program Files (x86)\TuneUp Utilities 2012\TuneUpUtilitiesApp64.exe]
+SIZE=0
+SAMPS=4
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x13f9d0000
+LINECOUNT=4
+2704,2708,1,1,[0 0] 1,0x27d45
+2704,2732,1,1,[1 0] 1,0x31a5e
+2704,2708,1,1,[0 0] 1,0x3b0f3
+2704,2732,1,1,[1 0] 1,0x3c9aa
+[SUB_END]
+[END]
+

@@ -1,0 +1,14 @@
+﻿[C:\Windows\system32\DRIVERS\cdrom.sys]
+SIZE=0
+SAMPS=2
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0xfffff88004254000
+LINECOUNT=2
+2348,1536,1,1,[0 0] 1,0xe007
+4,64,1,1,[0 0] 1,0x1fc9d
+[SUB_END]
+[END]
+

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<OSV version="1" >
+	<Entry hdr="Target Application Info" >
+		<Entry hdr="PID : 7196" val="D:\Projects\Visual Studios\Projects\LearningPlatform\LearningPlatform\bin\Debug\LearningPlatform.exe" >
+			<Entry hdr="TID : 812" val="1721.91 sec" />
+			<Entry hdr="TID : 880" val="1723.42 sec" />
+			<Entry hdr="TID : 1132" val="68.172 sec" />
+			<Entry hdr="TID : 1136" val="1723.68 sec" />
+			<Entry hdr="TID : 1228" val="0.435 sec" />
+			<Entry hdr="TID : 1996" val="1641.9 sec" />
+			<Entry hdr="TID : 2828" val="1738.18 sec" />
+			<Entry hdr="TID : 3704" val="1738.17 sec" />
+			<Entry hdr="TID : 3760" val="1723.42 sec" />
+			<Entry hdr="TID : 4584" val="0.434 sec" />
+			<Entry hdr="TID : 4708" val="0.457 sec" />
+			<Entry hdr="TID : 5252" val="1719.26 sec" />
+			<Entry hdr="TID : 5716" val="1738.21 sec" />
+			<Entry hdr="TID : 5788" val="1738.21 sec" />
+			<Entry hdr="TID : 6020" val="1721.91 sec" />
+			<Entry hdr="TID : 6024" val="89.882 sec" />
+			<Entry hdr="TID : 6156" val="1735.35 sec" />
+			<Entry hdr="TID : 6252" val="1738.08 sec" />
+			<Entry hdr="TID : 6360" val="1723.29 sec" />
+			<Entry hdr="TID : 6468" val="1723.37 sec" />
+			<Entry hdr="TID : 6720" val="1723.68 sec" />
+			<Entry hdr="TID : 7184" val="1738.08 sec" />
+			<Entry hdr="TID : 7524" val="30 sec" />
+			<Entry hdr="TID : 7656" val="67.01 sec" />
+			<Entry hdr="TID : 7916" val="1738.04 sec" />
+			<Entry hdr="TID : 7984" val="114.375 sec" />
+			<Entry hdr="TID : 7996" val="40.627 sec" />
+			<Entry hdr="TID : 8056" val="1639.74 sec" />
+			<Entry hdr="TID : 8148" val="10.354 sec" />
+			<Entry hdr="TID : 8228" val="1735.36 sec" />
+			<Entry hdr="TID : 8252" val="30.006 sec" />
+			<Entry hdr="TID : 8364" val="1721.91 sec" />
+			<Entry hdr="TID : 8488" val="0.434 sec" />
+			<Entry hdr="TID : 8736" val="1720.99 sec" />
+			<Entry hdr="TID : 8752" val="1722.92 sec" />
+			<Entry hdr="TID : 8820" val="1721.91 sec" />
+			<Entry hdr="TID : 8832" val="1721.91 sec" />
+			<Entry hdr="TID : 8872" val="1715.87 sec" />
+			<Entry hdr="TID : 8968" val="1721.91 sec" />
+		</Entry>
+	</Entry>
+	<Entry hdr="System-wide Profile" >
+		<Entry hdr="Number of Processes" val="67  [View Processes]" lnk = "proc:Session.tbp" />
+		<Entry hdr="Number of Modules" val="235  [View Modules]" lnk = "sys:Session.tbp" />
+	</Entry>
+</OSV>

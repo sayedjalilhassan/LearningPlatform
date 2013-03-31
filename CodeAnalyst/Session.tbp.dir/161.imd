@@ -1,0 +1,18 @@
+﻿[C:\Windows\system32\DRIVERS\vwififlt.sys]
+SIZE=0
+SAMPS=6
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0xfffff88004000000
+LINECOUNT=6
+4,28,1,1,[0 0] 1,0x6703
+4,28,1,1,[2 0] 1,0x67a4
+4,4772,1,1,[3 0] 1,0x67a4
+4,28,1,1,[2 0] 1,0x686b
+4,24,1,1,[2 0] 1,0xa003
+4,32,1,1,[2 0] 1,0xa023
+[SUB_END]
+[END]
+

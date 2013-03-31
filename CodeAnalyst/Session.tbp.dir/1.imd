@@ -1,0 +1,15 @@
+﻿[C:\Program Files (x86)\AMD\CodeAnalyst\bin\AMD CA Tool.dll]
+SIZE=0
+SAMPS=6
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x57120000
+LINECOUNT=3
+5384,1508,4,3,[0 0] 2,[1 0] 1,[2 0] 1,0x8f477
+5384,1508,1,1,[0 0] 1,0x8f47f
+5384,1508,1,1,[0 0] 1,0xb4d58
+[SUB_END]
+[END]
+

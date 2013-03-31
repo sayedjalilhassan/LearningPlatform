@@ -1,0 +1,16 @@
+﻿[C:\Program Files (x86)\OpenBitCoin\daemon.exe]
+SIZE=0
+SAMPS=4
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x50000
+LINECOUNT=4
+3936,3940,1,1,[1 0] 1,0x94bb
+3936,3940,1,1,[1 0] 1,0xaeae
+3936,3940,1,1,[2 0] 1,0x2ec8a
+3936,3940,1,1,[1 0] 1,0x2f95f
+[SUB_END]
+[END]
+

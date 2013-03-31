@@ -1,0 +1,12 @@
+﻿[unknown module pid (2404)]
+SIZE=0
+SAMPS=1
+ModuleType=5
+NUMSUBSECTIONS=1
+
+[SUB]
+LINECOUNT=1
+2404,3348,1,1,[0 0] 1,0x77a16f6c
+[SUB_END]
+[END]
+

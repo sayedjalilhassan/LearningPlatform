@@ -1,0 +1,15 @@
+﻿[C:\Program Files (x86)\DFX\Universal\Apps\DfxSharedApp64.exe]
+SIZE=0
+SAMPS=5
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x13fcc0000
+LINECOUNT=3
+3536,3532,2,2,[1 0] 1,[2 0] 1,0x10b0
+3536,3532,1,1,[1 0] 1,0x1ab2
+3536,3532,2,2,[1 0] 1,[2 0] 1,0x1ad4
+[SUB_END]
+[END]
+

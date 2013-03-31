@@ -1,0 +1,15 @@
+﻿[unknown module pid (4484)]
+SIZE=0
+SAMPS=4
+ModuleType=5
+NUMSUBSECTIONS=1
+
+[SUB]
+LINECOUNT=4
+4484,8036,1,1,[0 0] 1,0xdce7a86
+4484,8036,1,1,[0 0] 1,0x1580e1f4
+4484,8036,1,1,[0 0] 1,0x15821fdd
+4484,8036,1,1,[2 0] 1,0x162fc387
+[SUB_END]
+[END]
+

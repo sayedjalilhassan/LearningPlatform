@@ -1,0 +1,15 @@
+﻿[unknown module pid (804)]
+SIZE=0
+SAMPS=4
+ModuleType=5
+NUMSUBSECTIONS=1
+
+[SUB]
+LINECOUNT=4
+804,8768,1,1,[0 0] 1,0x77a2c06d
+804,852,1,1,[1 0] 1,0x77a53200
+804,852,1,1,[1 0] 1,0x77a533e0
+804,7288,1,1,[1 0] 1,0x77a55280
+[SUB_END]
+[END]
+

@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickGraph.Tests", "3.0\sources\QuickGraph.Tests\QuickGraph.Tests.csproj", "{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickGraph.Data", "3.0\sources\QuickGraph.Data\QuickGraph.Data.csproj", "{960C14D1-EDBD-40E5-8AE6-25E311551B87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{60A06011-2818-4BCB-BF1B-C28137A7F50D}"
+	ProjectSection(SolutionItems) = preProject
+		AppHarbor.vsmdi = AppHarbor.vsmdi
+		3.0\sources\LocalTestRun.testrunconfig = 3.0\sources\LocalTestRun.testrunconfig
+		3.0\sources\quickgraph.nuspec = 3.0\sources\quickgraph.nuspec
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickGraph.Serialization", "3.0\sources\QuickGraph.Serialization\QuickGraph.Serialization.csproj", "{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs03
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 3.0\\sources\\QuickGraph\\QuickGraph.csproj
+		SccProjectName1 = 3.0/sources/QuickGraph
+		SccLocalPath1 = 3.0\\sources\\QuickGraph
+		SccProjectUniqueName2 = 3.0\\sources\\QuickGraph.Tests\\QuickGraph.Tests.csproj
+		SccProjectName2 = 3.0/sources/QuickGraph.Tests
+		SccLocalPath2 = 3.0\\sources\\QuickGraph.Tests
+		SccProjectUniqueName3 = 3.0\\sources\\QuickGraph.Data\\QuickGraph.Data.csproj
+		SccProjectName3 = 3.0/sources/QuickGraph.Data
+		SccLocalPath3 = 3.0\\sources\\QuickGraph.Data
+		SccProjectUniqueName4 = 3.0\\sources\\QuickGraph.Graphviz\\QuickGraph.Graphviz.csproj
+		SccProjectName4 = 3.0/sources/QuickGraph.Graphviz
+		SccLocalPath4 = 3.0\\sources\\QuickGraph.Graphviz
+		SccProjectUniqueName5 = 3.0\\sources\\QuickGraph.Serialization\\QuickGraph.Serialization.csproj
+		SccProjectName5 = 3.0/sources/QuickGraph.Serialization
+		SccLocalPath5 = 3.0\\sources\\QuickGraph.Serialization
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = AppHarbor.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Release|Win32.ActiveCfg = Release|Any CPU
+		{61DF76E1-DE2B-4DF1-AD5F-89939AB06693}.Release|x86.ActiveCfg = Release|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Release|Win32.ActiveCfg = Release|Any CPU
+		{960C14D1-EDBD-40E5-8AE6-25E311551B87}.Release|x86.ActiveCfg = Release|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Release|Win32.ActiveCfg = Release|Any CPU
+		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Release|x86.ActiveCfg = Release|Any CPU
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Debug|Win32.ActiveCfg = Debug|x86
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Debug|x86.ActiveCfg = Debug|x86
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Debug|x86.Build.0 = Debug|x86
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Release|Any CPU.ActiveCfg = Release|x86
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Release|Mixed Platforms.Build.0 = Release|x86
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Release|Win32.ActiveCfg = Release|x86
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Release|x86.ActiveCfg = Release|x86
+		{21689CB1-DCD5-45C6-B8B8-8BD14B19832F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

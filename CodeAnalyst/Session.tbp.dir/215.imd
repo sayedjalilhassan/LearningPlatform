@@ -1,0 +1,14 @@
+﻿[unknown module pid (3592)]
+SIZE=0
+SAMPS=3
+ModuleType=5
+NUMSUBSECTIONS=1
+
+[SUB]
+LINECOUNT=3
+3592,5532,1,1,[1 0] 1,0x77a2b6b5
+3592,3328,1,1,[0 0] 1,0x77a53004
+3592,3488,1,1,[0 0] 1,0x77a53469
+[SUB_END]
+[END]
+

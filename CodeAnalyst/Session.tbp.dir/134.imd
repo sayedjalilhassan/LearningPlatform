@@ -1,0 +1,14 @@
+﻿[C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17825_none_72d273598668a06b\gdiplus.dll]
+SIZE=0
+SAMPS=2
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x72040000
+LINECOUNT=2
+5384,1508,1,1,[2 0] 1,0xb7a55
+5384,1508,1,1,[2 0] 1,0xf22f9
+[SUB_END]
+[END]
+

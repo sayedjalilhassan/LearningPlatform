@@ -1,0 +1,13 @@
+﻿[C:\Program Files (x86)\Internet Download Manager\IDMan.exe]
+SIZE=0
+SAMPS=1
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x400000
+LINECOUNT=1
+3412,3416,1,1,[1 0] 1,0xe2486
+[SUB_END]
+[END]
+

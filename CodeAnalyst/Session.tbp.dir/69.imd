@@ -1,0 +1,13 @@
+﻿[C:\Windows\SysWOW64\dhcpcsvc.DLL]
+SIZE=0
+SAMPS=1
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x6bfd0000
+LINECOUNT=1
+3640,4192,1,1,[0 0] 1,0x1278
+[SUB_END]
+[END]
+

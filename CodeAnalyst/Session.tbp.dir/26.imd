@@ -1,0 +1,17 @@
+﻿[C:\Users\Sayed_Jalil_Hassan\AppData\Local\Google\Chrome\Application\WINMM.dll]
+SIZE=0
+SAMPS=5
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x6c090000
+LINECOUNT=5
+860,4076,1,1,[0 0] 1,0x3627
+5020,5024,1,1,[1 0] 1,0x3627
+6256,8280,1,1,[2 0] 1,0x3627
+860,2568,1,1,[2 0] 1,0x3651
+3640,2576,1,1,[1 0] 1,0x3651
+[SUB_END]
+[END]
+

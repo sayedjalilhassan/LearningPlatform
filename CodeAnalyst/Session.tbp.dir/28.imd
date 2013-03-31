@@ -1,0 +1,16 @@
+﻿[C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorwks.dll]
+SIZE=0
+SAMPS=4
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x6ac20000
+LINECOUNT=4
+4092,5072,1,1,[0 0] 1,0x2580
+4092,5072,1,1,[0 0] 1,0x4442
+4092,5072,1,1,[2 0] 1,0x18112
+4092,8080,1,1,[0 0] 1,0xd13a7
+[SUB_END]
+[END]
+

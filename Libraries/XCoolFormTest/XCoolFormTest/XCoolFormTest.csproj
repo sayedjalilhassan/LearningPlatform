@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB34D5F3-5453-4F5F-A061-766F6C68ABFC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XCoolFormTest</RootNamespace>
+    <AssemblyName>XCoolFormTest</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlienButtonControl, Version=1.0.3183.26194, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DotNETBookExmpl\AlienButtonControl\AlienButtonControl\bin\Debug\AlienButtonControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XCoolForm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XCoolForm\XCoolForm\bin\Debug\XCoolForm.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCoolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoolForm.Designer.cs">
+      <DependentUpon>frmCoolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCoolForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCoolForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="XmlThemeLoader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Photoshop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\System-Registry-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nibble-256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Access.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coldfusion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MS-Word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candy-cane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snowman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmas-decoration-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmas-decoration-red-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmas-tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santa-cap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candy-canebig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Christmas-ornaments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snowman1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snowmansmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mammooth_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mammooth_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cow_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panda_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penguine_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Funshine Bear _128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Funshine Bear 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quake-256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quake-IV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Devastation-1-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GDI-256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Command-Conquer-3-TW-new-SCRIN-2-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycled-Full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My-Computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My-Documents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My-Network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quake-IV-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quake-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quake-II-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quake-III-Arena-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribbon-heart-128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rose-128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\symbol-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butterfly-pink-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butterfly-purple-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lotus-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple-flower-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paisley-6-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-valentine-128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien-egg-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien-vs-predator-3-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disc-predator-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\predator-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\predator-256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XCoolForm.sln" />
+    <None Include="Resources\giantapple.png" />
+    <None Include="Resources\logo-apple-actual.jpg" />
+    <None Include="Resources\Apple-Logo-256x256.png" />
+    <None Include="Resources\macIcon1.png" />
+    <None Include="Resources\mypc-48x48.png" />
+    <None Include="Resources\folder-48x48.png" />
+    <None Include="Resources\mydocuments-48x48.png" />
+    <None Include="Resources\mymusic-48x48.png" />
+    <Content Include="Themes\AdobeMediaPlayerTheme.xml" />
+    <Content Include="Themes\AlienTheme.xml" />
+    <Content Include="Themes\AnimalKingdomTheme.xml" />
+    <Content Include="Themes\BlackTheme.xml" />
+    <Content Include="Themes\BlueWinterTheme.xml" />
+    <Content Include="Themes\DarkSystemTheme.xml" />
+    <Content Include="Themes\MacOSTheme.xml" />
+    <Content Include="Themes\StandardWindowsTheme.xml" />
+    <Content Include="Themes\ValentineTheme.xml" />
+    <Content Include="Themes\VistaTheme.xml" />
+    <Content Include="Themes\WhiteTheme.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

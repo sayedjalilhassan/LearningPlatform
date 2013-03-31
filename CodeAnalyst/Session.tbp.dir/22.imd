@@ -1,0 +1,17 @@
+﻿[C:\Program Files\Microsoft Security Client\msseces.exe]
+SIZE=0
+SAMPS=7
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x13fa00000
+LINECOUNT=5
+2632,2628,2,1,[0 0] 2,0x2ae5e
+2632,2628,1,1,[0 0] 1,0x2ae77
+2632,2628,1,1,[2 0] 1,0x4038e
+2632,2628,1,1,[3 0] 1,0x846b8
+2632,2628,2,2,[2 0] 1,[3 0] 1,0x846bd
+[SUB_END]
+[END]
+

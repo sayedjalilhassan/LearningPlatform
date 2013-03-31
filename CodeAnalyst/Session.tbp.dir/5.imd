@@ -1,0 +1,13 @@
+﻿[C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe]
+SIZE=0
+SAMPS=1
+ModuleType=1
+NUMSUBSECTIONS=1
+
+[SUB]
+BASEADDR=0x400000
+LINECOUNT=1
+6604,6296,1,1,[0 0] 1,0xfba5
+[SUB_END]
+[END]
+
