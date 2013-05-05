@@ -1,0 +1,16 @@
+
+Q1. Which of the following represents 'Question1.jpg', in the form of a matrix?
+
+a) 'Q1o1.jpg'
+b) 'Q1o2.jpg'
+c) 'Q1o3.jpg'
+d) 'Q1o4.jpg'
+
+
+
+Q2. Which of the following represents 'Question2.jpg', in the form of a matrix?
+
+a) 'Q2o1.jpg'
+b) 'Q2o2.jpg'
+c) 'Q2o3.jpg'
+d) 'Q2o4.jpg'

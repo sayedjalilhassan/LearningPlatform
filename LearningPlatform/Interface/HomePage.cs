@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using LearningPlatform.Logic;
+using System.IO;
 
 namespace LearningPlatform.Interface
 {
@@ -17,16 +18,76 @@ namespace LearningPlatform.Interface
         Button nextButton;
         Button submitButton;
         TextBox questionText;
+        int correctCount = 0, wrongCount = 0;
         List<RadioButton> optionsRadioButtons = new List<RadioButton>();
+        string lessonsfileName = @"..\..\Resources\assests\profile.txt";
+        string quizezfileName = @"..\..\Resources\assests\performance.txt";
         private XmlThemeLoader xtl = new XmlThemeLoader();
         public HomePage()
             : base()
         {
             InitializeComponent();
+            this.axWindowsMediaPlayer2.PlayStateChange +=
+                new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.axWindowsMediaPlayer2_PlayStateChange);
             if (Controller.getLessons().Count > 0)
+            {
                 addQuiz();
-
+                //Controller.getPreReqsForLesson(8);
+            }
+            this.innerPanel.Enabled = false;
+            populateProfile();
+           /*
+            if (Controller.finishedLessons.Count > 0)
+                MessageBox.Show(Controller.finishedLessons.ElementAt(Controller.finishedLessons.Count - 1).Title);
+            else
+                MessageBox.Show("No Finished Lessons"); */
         }
+
+        private void Test_Load(object sender, EventArgs e)
+        {
+            //xtl.ThemeForm = this;
+            //xtl.ApplyTheme(System.IO.Path.Combine(Environment.CurrentDirectory, @"..\..\Themes\WhiteTheme.xml"));
+            this.TitleBar.TitleBarCaption = "Home Page";
+            this.TitleBar.TitleBarFill = XCoolForm.XTitleBar.XTitleBarFill.AdvancedRendering;
+            this.TitleBar.TitleBarType = XCoolForm.XTitleBar.XTitleBarType.Rounded;
+            Color c = Color.FromArgb(0, 192, 192);
+            this.TitleBar.TitleBarCaptionColor = c;
+            this.TitleBar.TitleBarCaptionFont = new Font("Impact", 12, FontStyle.Regular);
+
+            this.treeListView1.SetObjects(Controller.GetChapters());
+            // Can the given object be expanded?
+            this.treeListView1.CanExpandGetter = delegate(Object x)
+            {
+                return (x is Chapter);
+            };
+
+            // What objects should belong underneath the given model object?
+            this.treeListView1.ChildrenGetter = delegate(Object x)
+            {
+                if (x is Chapter)
+                {
+                    Console.WriteLine("yES i AM A chapter");
+                    //return Controller.GetLessonsForChapter(((Chapter)x).Title);
+                    Console.WriteLine(((Chapter)x).Lessons.Count);
+                    return ((Chapter)x).Lessons;
+                }
+
+                throw new ArgumentException("Should be a Chapter");
+            };
+
+            // Which image should be used for which model
+            this.titleColoumn.ImageGetter = delegate(Object x)
+            {
+
+                if (x is Chapter)
+                    return "folder_icon";
+                else
+                    return "video_icon";
+            };
+
+            this.treeListView1.SetObjects(Controller.GetChapters());
+        }
+
 
         private void addQuiz()
         {
@@ -109,6 +170,7 @@ namespace LearningPlatform.Interface
         {
             if (quiz_index < Controller.selectedLesson.getQuizes().Count - 1)
             {
+                submitButton.Enabled = true;
                 quiz_index++;
                 innerPanel.Controls.Clear();
                 addQuiz();
@@ -116,9 +178,14 @@ namespace LearningPlatform.Interface
             }
             else
             {
-                MessageBox.Show("No more Quizez");
+                MessageBox.Show("You Scored "+correctCount +"out of " +Controller.selectedLesson.getQuizes().Count+"");
+                string toWrite = Controller.selectedLesson.Id+" "+Controller.selectedLesson.Chapter.Id + " " +
+                    correctCount + " "+ Controller.selectedLesson.getQuizes().Count;
+                writetoFile(toWrite,quizezfileName);
                 quiz_index = 0;
+                correctCount = 0;
                 nextButton.Enabled = false;
+                submitButton.Enabled = false;
             }
 
         }
@@ -126,20 +193,36 @@ namespace LearningPlatform.Interface
         void submitbutton_Click(object sender, System.EventArgs e)
         {
             int count = 0;
+            int selectedCount = 0;
             foreach (RadioButton r in this.optionsRadioButtons)
             {
 
                 if (r.Checked)
                 {
                     if (Controller.selectedLesson.getQuizes().ElementAt(quiz_index).CorrectIndex == count)
+                    {
                         MessageBox.Show("Correct");
+                        this.correctCount++;
+                    }
                     else
                         MessageBox.Show("Incorrect");
-                    r.Checked = false;    
+                    r.Checked = false;
                     break;
+                }
+                else
+                {
+                    selectedCount++;
                 }
                 count++;
             }
+            if (selectedCount == optionsRadioButtons.Count)
+                MessageBox.Show("Please Select an Option !");
+            else
+                submitButton.Enabled = false;
+            /* string toWrite = Controller.selectedLesson.getQuizes().ElementAt (quiz_index).Id+" " 
+                   + Controller.selectedLesson.Id + " " + Controller.selectedLesson.Title + " "; */
+
+            //writetoFile(Controller.selectedLesson.Title + " " + Controller.selectedLesson.IsFinished + "", quizezfileName);
         }
 
         /*
@@ -147,56 +230,27 @@ namespace LearningPlatform.Interface
          * */
 
 
-        private void Test_Load(object sender, EventArgs e)
+
+
+        private void axWindowsMediaPlayer2_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
         {
-            xtl.ThemeForm = this;
-            xtl.ApplyTheme(System.IO.Path.Combine(Environment.CurrentDirectory, @"..\..\Themes\WhiteTheme.xml"));
-            this.TitleBar.TitleBarCaption = "Home Page";
-            this.TitleBar.TitleBarFill = XCoolForm.XTitleBar.XTitleBarFill.AdvancedRendering;
-            this.TitleBar.TitleBarType = XCoolForm.XTitleBar.XTitleBarType.Rounded;
-            Color c = Color.FromArgb(0, 192, 192);
-            this.TitleBar.TitleBarCaptionColor = c;
-            this.TitleBar.TitleBarCaptionFont = new Font("Impact", 12, FontStyle.Regular);
-
-            this.treeListView1.SetObjects(Controller.GetChapters());
-            // Can the given object be expanded?
-            this.treeListView1.CanExpandGetter = delegate(Object x)
+            if (isStopped())
             {
-                return (x is Chapter);
-            };
+                Controller.selectedLesson.TotalPlayTime = axWindowsMediaPlayer2.Ctlcontrols.currentItem.duration;
+               // MessageBox.Show(Controller.selectedLesson.IsFinished + "");
+                
+                // this.Close();
+            }
+            else if (isEnded())
+            {   
+                this.innerPanel.Enabled = true;
+               // MessageBox.Show("Ended");
+                Controller.selectedLesson.IsFinished = true;
 
-            // What objects should belong underneath the given model object?
-            this.treeListView1.ChildrenGetter = delegate(Object x)
-            {
-                if (x is Chapter)
-                {
-                    Console.WriteLine("yES i AM A chapter");
-                    //return Controller.GetLessonsForChapter(((Chapter)x).Title);
-                    Console.WriteLine(((Chapter)x).Lessons.Count);
-                    return ((Chapter)x).Lessons;
-                }
+                writetoFile(Controller.selectedLesson.Id + " " + Controller.selectedLesson.Chapter.Id + " "
+                    + Controller.selectedLesson.IsFinished + "", lessonsfileName);
 
-                throw new ArgumentException("Should be a Chapter");
-            };
-
-            // Which image should be used for which model
-            this.titleColoumn.ImageGetter = delegate(Object x)
-            {
-
-                if (x is Chapter)
-                    return "folder_icon";
-                else
-                    return "video_icon";
-            };
-
-            this.treeListView1.SetObjects(Controller.GetChapters());
-            //String path = @"C:\Users\Sayed_Jalil_Hassan\Desktop\Tutorial_ Android Application Development - Lists and Adapters - YouTube.MP4";
-
-            // PlayFile(path);
-        }
-
-        private void play()
-        {
+            }
 
         }
 
@@ -207,34 +261,20 @@ namespace LearningPlatform.Interface
             axWindowsMediaPlayer2.URL = URL;
         }
 
-        private void Player_PlayStateChange(int NewState)
+        private bool isEnded()
         {
-            if ((WMPLib.WMPPlayState)NewState == WMPLib.WMPPlayState.wmppsStopped)
-            {
-                this.Close();
-            }
+            return axWindowsMediaPlayer2.playState == WMPLib.WMPPlayState.wmppsMediaEnded;
         }
 
-        private void Player_MediaError(object pMediaObject)
+        private bool isPlaying()
         {
-            MessageBox.Show("Cannot play media file.");
-            this.Close();
+            // MessageBox.Show(Controller.selectedLesson.PlayedTime + " " + Controller.selectedLesson.TotalPlayTime + "");
+            return axWindowsMediaPlayer2.playState == WMPLib.WMPPlayState.wmppsReady || axWindowsMediaPlayer2.playState == WMPLib.WMPPlayState.wmppsPlaying;
         }
 
-        private void axWindowsMediaPlayer1_ClickEvent(object sender, AxWMPLib._WMPOCXEvents_ClickEvent e)
+        private bool isStopped()
         {
-
-
-        }
-
-        private void axWindowsMediaPlayer2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lessonsPage_Click(object sender, EventArgs e)
-        {
-
+            return axWindowsMediaPlayer2.playState == WMPLib.WMPPlayState.wmppsStopped;
         }
 
         private void treeListView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -247,47 +287,95 @@ namespace LearningPlatform.Interface
             {
                 Controller.selectedLesson = (Lesson)treeListView1.SelectedObject;
                 String path = Controller.selectedLesson.VideoPath;
-                quiz_index = 0;
-                nextButton.Enabled = true;
-                questionText.Text = Controller.selectedLesson.getQuizes().ElementAt(quiz_index).Question;
+                if(Controller.finishedLessons.Contains(Controller.selectedLesson))
+                {
+                    Controller.selectedLesson.IsFinished = true;
+                }
+                this.quiz_index = 0;
+                this.submitButton.Enabled = true;
+                this.nextButton.Enabled = true;
+                this.questionText.Text = Controller.selectedLesson.getQuizes().ElementAt(quiz_index).Question;
                 //String path = @"C:\Users\Sayed_Jalil_Hassan\Desktop\types-of-motion-1.wmv";
-
+                if (!Controller.selectedLesson.IsFinished)
+                {
+                    this.innerPanel.Enabled = false;
+                }
+                else
+                    this.innerPanel.Enabled = true;
                 PlayFile(path);
             }
 
 
         }
 
-        private void treeListView1_CellClick(object sender, BrightIdeasSoftware.CellClickEventArgs e)
+
+        public void writetoFile(string data, string filename)
         {
-            if (e.Item.Text == "Rest and Motion")
-            {
-                //String path = @"C:\Users\Sayed_Jalil_Hassan\Desktop\types-of-motion-1.wmv";
+            //string fileName = @"..\..\profile.txt";
+            TextWriter tsw = new StreamWriter(filename, true);
 
-                //PlayFile(path);
+            //Writing text to the file.
+            tsw.WriteLine(data);
 
-            }
 
-            if (e.Item.Selected)
-            {
-                //Controller.selectedLesson = (Lesson)treeListView1.SelectedObject;// SelectedItem;
-
-            }
-
-            // MessageBox.Show(e.Item.Text);
+            //Close the file.
+            tsw.Close();
         }
 
-        private Chapter findSelectedChapter()
-        {
 
+        public void populateProfile()
+        {
+            FileStream ifs = new FileStream(lessonsfileName, FileMode.Open);
+            StreamReader sr = new StreamReader(ifs);
+            string line = "";
+            string[] tokens = null;
+
+            while ((line = sr.ReadLine()) != null)
+            {
+                line = line.Trim();
+                tokens = line.Split(' '); // separate from-node and to-nodes
+                if (tokens.Length > 1)
+                {
+                    tokens[0] = tokens[0].Trim();
+                    tokens[1] = tokens[1].Trim();
+                    tokens[2] = tokens[2].Trim();
+
+                    Lesson l = getLesson(int.Parse(tokens[0]), int.Parse(tokens[1]));
+                    if (l != null)
+                    {
+                        l.IsFinished = bool.Parse(tokens[2]);
+                        addLesson(l);
+                    }
+                }
+                
+                
+
+            }
+            sr.Close(); ifs.Close();
+        }
+
+        public Lesson getLesson(int id, int chapter_id)
+        {
+            foreach (Lesson l in Controller.getLessons())
+            {
+                if (l.Chapter.Id == chapter_id && l.Id == id)
+                    return l;
+            }
             return null;
         }
 
-
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        public void addLesson(Lesson l)
         {
 
+            if (!Controller.finishedLessons.Contains(l))
+                Controller.finishedLessons.Add(l);
+        }
+
+
+        public void initializeRecommendationsPanel()
+        {
+            Label pageTitle = new Label();
+            pageTitle.Location = new Point();
         }
 
 

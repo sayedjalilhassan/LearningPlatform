@@ -1,0 +1,5 @@
+What is the order of the matrix given below?
+Which of the folowing matrices is of the order 4-by-2?
+What is the order of the matrix given below?
+What element is present at the position ‘2-by-3’ in the matrix given below?
+Which of the following has the same order as matrix given below?

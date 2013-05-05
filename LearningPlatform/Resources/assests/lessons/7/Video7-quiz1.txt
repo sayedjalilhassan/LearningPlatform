@@ -1,0 +1,15 @@
+
+Q1. If you add a matrix Y to the negative of matrix Y, the result will be?
+
+a) A null matrix of the same order
+b) A null matrix of a different order
+c) Matrix Y
+d) Negative of matrix Y
+
+
+Q2. What is the negative of matrix B = 'Question2.jpg'?
+
+a) 'Q2o1.jpg'
+b) 'Q2o2.jpg'
+c) 'Q2o3.jpg'
+d) 'Q2o4.jpg'

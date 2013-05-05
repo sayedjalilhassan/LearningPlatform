@@ -13,7 +13,12 @@ namespace LearningPlatform.Logic
         string _question;
         int correct_index = 0;
         List<string> options = new List<string>();
-
+        public List<String> q_jpegs = new List<String>();
+        public List<String> ans_jpegs = new List<String>();
+        public Quizz(int id)
+        {
+            this.Id = id;
+        }
         public Quizz(int id, string name, string question, string answer)
         {
             this.Id = id;

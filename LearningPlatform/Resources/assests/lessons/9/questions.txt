@@ -1,0 +1,2 @@
+All diagonal matrices are also?
+Which of the following is a diagonal matrix?

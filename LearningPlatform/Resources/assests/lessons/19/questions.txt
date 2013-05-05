@@ -1,0 +1,6 @@
+A matrix of order '3-by-4', can be multiplied by matrices of which of the following orders?
+The matrix given below can be multiplied by which of the following matrices?
+The matrix given below cannot be multiplied by which of the following matrices?
+If matrix A of order '1-by-2' is multiplied by matrix B of order '2-by-4', what will be the order of the resulting matrix?
+Multiply the matrices given below, which of the following is the resultant matrix?
+Multiply the matrices given below, which of the following is the resultant matrix?

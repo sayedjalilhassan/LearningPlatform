@@ -1,0 +1,23 @@
+
+Q1. Which of the folowing matrices is a column matrix?
+
+a) 'Q1o1.jpg'
+b) 'Q1o2.jpg'
+c) 'Q1o3.jpg'
+d) 'Q1o4.jpg'
+
+
+Q2. Which of the folowing matrices is a row matrix?
+
+a) 'Q1o1.jpg'
+b) 'Q1o2.jpg'
+c) 'Q1o3.jpg'
+d) 'Q1o4.jpg'
+
+
+Q3. Which of the folowing matrices is both a row matrix and a column matrix?
+ 
+a) 'Q3o1.jpg'
+b) 'Q1o2.jpg'
+c) 'Q3o3.jpg'
+d) 'Q1o4.jpg'

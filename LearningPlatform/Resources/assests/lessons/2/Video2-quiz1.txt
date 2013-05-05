@@ -1,0 +1,40 @@
+
+Q1. What is the order of the matrix A = 'Question1.jpg'?
+
+a) 2-by-3
+b) 3-by-3
+c) 1-by-2
+d) 3-by-2
+
+
+
+Q2. Which of the folowing matrices is of the order 4-by-2?
+
+a) 'Q2o1.jpg'
+b) 'Q2o2.jpg'
+c) 'Q2o3.jpg'
+d) 'Q2o4.jpg'
+
+
+Q3. What is the order of matrix B = 'Question3.jpg'?
+
+a) 2-by-1
+b) 1-by-2
+c) 1-by-1
+d) 1-by-0
+
+
+Q4. What element is present at the position ‘2-by-3’ in the matrix C = 'Q2o1.jpg'?
+
+a) 3
+b) 6
+c) 1
+d) 8
+
+
+Q5. Which of the following has the same order as matrix D = 'Question5.jpg'?
+
+a) 'Q2o3.jpg'
+b) 'Question1.jpg'
+c) 'Q5o3.jpg'
+d) Both (a) and (c)

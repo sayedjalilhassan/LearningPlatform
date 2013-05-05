@@ -10,7 +10,7 @@ using LearningPlatform.Logic;
 [assembly: AssemblyTitle("LearningPlatform")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("LUMS")]
 [assembly: AssemblyProduct("LearningPlatform")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]

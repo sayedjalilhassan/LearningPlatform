@@ -1,0 +1,14 @@
+
+Q1. All diagonal matrices are also?
+
+a) Rectangular Matrices
+b) Square Matirces
+c) Null Matrices
+d) None of the above
+
+Q2: Which of the following is a diagonal matrix?
+
+a) 'Q2o1.jpg'
+b) 'Q2o2.jpg'
+c) 'Q2o3.jpg'
+d) 'Q2o4.jpg'

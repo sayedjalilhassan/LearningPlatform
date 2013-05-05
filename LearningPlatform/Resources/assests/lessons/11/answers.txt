@@ -1,0 +1,3 @@
+Scalar Matrices, Square Matrices, Diagonal Matrices, All of the above
+
+All scalar matrices are also identity matrices, All non-zero entries in an identity matrix are not equal to 1, Multiplying any matrix with an identity matrix results in the original matrix, None of the above

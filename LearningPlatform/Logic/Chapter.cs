@@ -18,6 +18,12 @@ namespace LearningPlatform.Logic
             this.Title = name;
         }
 
+        public Chapter(string name, int id)
+        {
+            this.Title = name;
+            this.Id = id;
+        }
+
         public Chapter()
         {
             // TODO: Complete member initialization

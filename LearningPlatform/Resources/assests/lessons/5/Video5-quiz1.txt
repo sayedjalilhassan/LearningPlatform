@@ -1,0 +1,16 @@
+
+Q1. Which of the folowing matrices is not a null matrix?
+
+a) 'Q1o1.jpg'
+b) 'Q1o2.jpg'
+c) 'Q1o3.jpg'
+d) All of the above
+
+
+Q2. Which of the folowing matrices is 'Question2.jpg'?
+ 
+a) 'Q1o1.jpg'
+b) 'Q1o4.jpg'
+c) 'Q2o3.jpg'
+d) 'Q1o3.jpg'
+

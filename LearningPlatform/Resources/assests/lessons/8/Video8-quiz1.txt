@@ -1,0 +1,14 @@
+
+Q1. Which of these is a symmetric matrix?
+
+a) 'Q1o1.jpg'
+b) 'Q1o2.jpg'
+c) 'Q1o3.jpg'
+d) Both (a) and (b)
+
+Q2: Which of these is a skew symmetric matrix?
+
+a) 'Q2o1.jpg'
+b) 'Q2o2.jpg'
+c) 'Q2o3.jpg'
+d) 'Q2o4.jpg'

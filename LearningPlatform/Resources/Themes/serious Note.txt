@@ -1,0 +1,2 @@
+for docked supporting controls
+padding to 8, 35, 8, 30 

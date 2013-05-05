@@ -1,0 +1,2 @@
+Which of these is a symmetric matrix?
+Which of these is a skew symmetric matrix?
