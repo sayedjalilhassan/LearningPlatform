@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using LearningPlatform.Logic;
 using System.IO;
+using LearningPlatform.Logic.Recommender;
 
 namespace LearningPlatform.Interface
 {
@@ -36,6 +37,7 @@ namespace LearningPlatform.Interface
             }
             this.innerPanel.Enabled = false;
             populateProfile();
+            initializeRecommendationsPanel();
            /*
             if (Controller.finishedLessons.Count > 0)
                 MessageBox.Show(Controller.finishedLessons.ElementAt(Controller.finishedLessons.Count - 1).Title);
@@ -92,8 +94,9 @@ namespace LearningPlatform.Interface
         private void addQuiz()
         {
             titleLabel = new Label();
-            titleLabel.Location = new Point(((int)(innerPanel.Width / 2) - 50), 50);
+            titleLabel.Location = new Point(((int)(innerPanel.Width / 2) - 150), 50);
             titleLabel.Text = Controller.selectedLesson.Title;
+            titleLabel.Width = this.innerPanel.Width / 2;
             titleLabel.Font = new Font("Sans serif", 12, FontStyle.Bold);
             this.innerPanel.Controls.Add(titleLabel);
 
@@ -246,9 +249,10 @@ namespace LearningPlatform.Interface
                 this.innerPanel.Enabled = true;
                // MessageBox.Show("Ended");
                 Controller.selectedLesson.IsFinished = true;
-
+                Controller.finishedLessons.Add(Controller.selectedLesson);
                 writetoFile(Controller.selectedLesson.Id + " " + Controller.selectedLesson.Chapter.Id + " "
                     + Controller.selectedLesson.IsFinished + "", lessonsfileName);
+                initializeRecommendationsPanel();
 
             }
 
@@ -374,8 +378,87 @@ namespace LearningPlatform.Interface
 
         public void initializeRecommendationsPanel()
         {
+            this.recom_innerPanel.Controls.Clear();
             Label pageTitle = new Label();
-            pageTitle.Location = new Point();
+            pageTitle.Location = new Point(this.recom_innerPanel.Width/2-150,30);
+            pageTitle.Text = "Perosanilized Recommendations";
+            pageTitle.Width = this.recom_innerPanel.Width / 2;
+            this.recom_innerPanel.Controls.Add(pageTitle);
+
+            Label currentTitle = new Label();
+            currentTitle.Location = new Point(20, 70);
+            currentTitle.Text = "Recently Completed Lesson: ";
+            currentTitle.Width = this.recom_innerPanel.Width / 2;
+            this.recom_innerPanel.Controls.Add(currentTitle);
+
+            Lesson recent = Controller.finishedLessons.ElementAt(Controller.finishedLessons.Count-1);
+            Label currentLesson = new Label();
+            currentLesson.Location = new Point(60, 100);
+            currentLesson.Text = recent.Title;
+            currentLesson.ForeColor = Color.Black;
+            currentLesson.Width = this.recom_innerPanel.Width / 2;
+            this.recom_innerPanel.Controls.Add(currentLesson);
+
+             Lesson next = new Lesson();
+            if(recent.Id <Controller.getLessons().Count-1)
+                next = Controller.getLesson(recent.Id+1);
+
+            Label nextTitle = new Label();
+            nextTitle.Location = new Point(20, 130);
+            nextTitle.Text = "Next Lesson :";
+            nextTitle.Width = this.recom_innerPanel.Width / 2;
+            this.recom_innerPanel.Controls.Add(nextTitle);
+
+            Label nextLesson = new Label();
+            nextLesson.Location = new Point(60, 160);
+            if (recent.Id < Controller.getLessons().Count - 1)
+                nextLesson.Text = next.Title;
+            else
+                nextLesson.Text = "";
+            nextLesson.ForeColor = Color.Black;
+            nextLesson.Width = this.recom_innerPanel.Width / 2;
+            this.recom_innerPanel.Controls.Add(nextLesson);
+
+            Label recomTitle = new Label();
+            recomTitle.Location = new Point(20, 190);
+            recomTitle.Text = "System Recommendations :";
+            recomTitle.Width = this.recom_innerPanel.Width / 2;
+            this.recom_innerPanel.Controls.Add(recomTitle);
+
+            Recommender recom = new Recommender(next);
+            Label recomLabel = new Label();
+            recomLabel.Location = new Point(60, 220);
+            if (recom.calculateExpectedValue() >= 0.5)
+            {
+                recomLabel.Text = "Your performance in Course has been satisfactory so far;\nSYou can continue with next lesson: " +
+                next.Title;
+            }
+            else
+            {
+                recomLabel.Text = "Based on your performance History in course; it is recommended that you revise "+
+                    "the following Lessons: \n";
+                Controller.getPreReqsForLesson(next.Id);
+                int offset = 0;
+                for (int i = 0; i < next.preReqs.Count; i++)
+                {
+                    Label l = new Label();
+                    l.Location = new Point(60,270+offset);
+                    offset += 20;
+                    l.Width = this.recom_innerPanel.Width / 2;
+                    l.Text = next.preReqs.ElementAt(i).base_instance.Title;
+                    this.recom_innerPanel.Controls.Add(l);
+
+                }
+            }
+                
+            recomLabel.ForeColor = Color.Black;
+            recomLabel.Width = this.recom_innerPanel.Width / 2;
+            recomLabel.Height = 150;
+            this.recom_innerPanel.Controls.Add(recomLabel);
+
+            
+
+            
         }
 
 

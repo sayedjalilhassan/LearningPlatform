@@ -126,6 +126,7 @@
             // 
             // lessonsPage
             // 
+            this.lessonsPage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lessonsPage.Controls.Add(this.axWindowsMediaPlayer2);
             this.lessonsPage.Controls.Add(this.treeListView1);
             this.lessonsPage.Location = new System.Drawing.Point(4, 25);
@@ -144,7 +145,7 @@
             this.axWindowsMediaPlayer2.Location = new System.Drawing.Point(15, 27);
             this.axWindowsMediaPlayer2.Name = "axWindowsMediaPlayer2";
             this.axWindowsMediaPlayer2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer2.OcxState")));
-            this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(752, 434);
+            this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(752, 430);
             this.axWindowsMediaPlayer2.TabIndex = 1;
             // 
             // quizezPage
@@ -241,6 +242,7 @@
             // 
             // recom_innerPanel
             // 
+            this.recom_innerPanel.AutoScroll = true;
             this.recom_innerPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.recom_innerPanel.Location = new System.Drawing.Point(16, 13);
             this.recom_innerPanel.Name = "recom_innerPanel";
